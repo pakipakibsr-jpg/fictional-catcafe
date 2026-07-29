@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+     <meta charset="UTF-8">
+     <meta name="robots" content="noindex,nofollow">
+     <title>フォトギャラリー</title>
+     <link rel="stylesheet" href="./nekoHP.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=M+PLUS+1p&family=RocknRoll+One&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/長毛種猫2026-07-28 141146.png">
+    </head>
+    <body>
+      <header>
+      <h1 id="logo"><img src="./images/スクリーンショット 2026-07-24 154748.png" alt="ひまわりねこ" width="60px">猫カフェYUSAへようこそ！</h1>
+      <nav id="menubar">
+       <ul>
+        <li><a href="./nekocyanHPhome.html">猫カフェYUSAについて</a></li>
+        <li><a href="./nekocast.html">ねこキャスト紹介</a></li>
+        <li><a href="./nekocash.html">利用料金</a></li>
+        <li class="current"><a href="./nekogallery.html">フォトギャラリー</a></li>
+        <li><a href="./nekoform.html">お問い合わせ/SNS</a></li>
+       </ul>
+      </nav>
+    </header>
+<div class="fade-slideshow">
+  <img src="./images/maro1.JPG" class="fade-slide">
+  <img src="./images/miruku1.JPG" class="fade-slide">
+  <img src="./images/mugi1.JPG" class="fade-slide">
+  <img src="./images/rate1.JPG" class="fade-slide">
+  <img src="./images/neko1_122123_TP_V4.jpg" class="fade-slide">
+</div>
+
+<style>
+.fade-slideshow {
+  width: 900px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.fade-slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.fade-slide.show {
+  opacity: 1;
+}
+</style>
+
+<script>
+const fadeSlides = document.querySelectorAll(".fade-slide");
+let fadeIndex = 0;
+
+function fadeChange() {
+  fadeSlides.forEach(slide => {
+    slide.classList.remove("show");
+  });
+
+  fadeSlides[fadeIndex].classList.add("show");
+
+  fadeIndex++;
+  if (fadeIndex >= fadeSlides.length) {
+    fadeIndex = 0;
+  }
+}
+
+fadeChange();              // 最初の画像を表示
+setInterval(fadeChange, 4000); // 4秒ごとに切替
+</script>
+    </body>
+</html>

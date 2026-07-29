@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+h1{
+    color: brown;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+#logo{
+  width: 600px;
+  margin: 0 auto;
+}
+
+
+body{
+  font-family: "Hachi Maru Pop", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+  text-align: center;
+}
+
+*{
+  background-color: rgb(221 247 200/0.5);
+}
+
+h2{
+  font-size: 30px;
+    color: chocolate;
+}
+
+/*ブロック全体の設定*/
+#new dl {
+	height: 140px;	/*高さ。内様がこれを超えるとスクロールバーが出ます。*/
+	overflow: auto;
+	margin-bottom: 20px;
+}
+/*日付設定*/
+#new dt {
+	float:inline-start;
+	width: 9em;
+	letter-spacing: 0.1em;
+}
+/*記事設定*/
+#new dd {
+  text-align: left;
+	padding-left: 9rem;
+}
+
+.box1 {
+	overflow: hidden;position: relative;
+	padding: 20px 40px;		/*上下、左右へのボックス内の余白*/
+	border-radius: 30px;	/*角丸のサイズ。この１行を削除すると、通常の長方形になります。*/
+	margin-bottom: 30px;	/*下に空けるスペース*/
+	background: #fff;		/*背景色*/
+}
+/*bg1タイプの背景色*/
+.bg1 {
+	background: #ede9e2;	/*背景色*/
+}
+/*bg2タイプの背景色*/
+.bg2 {
+	background: transparent;	/*背景を透明にする*/
+	border: 2px dashed #fff;	/*枠線の幅、線種、色*/
+}
+
+.osirase{
+  background-color: rgb(242, 235, 222);
+}
+
+
+.newicon {
+	font-size: 70%;
+	display: inline-block;
+	line-height: 1.5;
+	padding: 2px 5px;
+	border-radius: 2px;
+	margin: 0px 5px;
+	vertical-align: text-top;
+	background: #F00;	/*背景色*/
+	color: #FFF;		/*文字色*/
+}
+
+.access {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.address {
+  flex: 5;
+  min-width: 0;
+}
+
+.map {
+  flex: 5;
+  min-width: 0;
+}
+
+.map iframe {
+  width: 100%;
+  height: 220px;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .access {
+    flex-direction: column;
+  }
+
+  .address,
+  .map {
+    width: 100%;
+  }
+}
+
+#topneko{
+  margin-top: 15rem;
+}
+
+.profile{
+  display: flex;
+  align-items: flex-start; /* 上揃えなら flex-start */
+  gap: 20px;           /* 画像と文章の間隔 */
+}
+
+.profile img {
+  width: 300px;
+  height: auto;
+}
+
+.text {
+  flex: 1;
+}
+
+h1,.photo {
+  border: 5px solid #4CAF50;
+  border-radius: 20px;
+}
+
+h3{
+  font-size: 30px;
+  color: rgb(241, 100, 107);
+  margin: 0;
+  padding: 0;
+}
+
+.map {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.map iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/*メニューブロック全体への指定*/
+#menubar {
+	line-height: 2;
+	text-align: center;
+	font-size: 18px;	/*文字サイズ*/	
+}
+/*メニュー１個あたりの指定*/
+#menubar li {
+	display: inline-block;	/*横並びにする指定*/
+	margin: 0px 5px;			/*上下、左右へのメニューの外側にとる余白*/
+}
+#menubar li a {
+	text-decoration: none;display: block; 
+	padding: 0px 20px;	/*上下、左右へのメニューの内側にとる余白*/
+}
+
+#menubar li a:link,a:visited{
+  color: palevioletred;
+}
+
+/*現在表示中(current)と、マウスオン時の指定*/
+#menubar li.current a, #menubar li a:hover {
+	background: #fff;	/*背景色*/
+	color: #ea46cc;			/*文字色*/
+	border-radius: 100px;	/*角丸のサイズ。大きめであれば適当で構いません。この１行を削除すると、長方形になります。*/
+}
+
+.fade-slideshow {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+
+  margin: 0 auto;
+
+  border: 12px solid #d8b48a;
+  border-radius: 15px;
+  box-shadow:
+    0 4px 10px rgba(0,0,0,0.25),
+    inset 0 0 5px rgba(255,255,255,0.8);
+} 
+
+.photo-frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  z-index: 10;
+  pointer-events: none;
+}
+
+.bnto-table-rounded {
+  width: 50%; border-collapse: collapse; background: #f9f4f4;
+  height: 300px;
+  border-radius: 14px; overflow: hidden;
+  border: 2px solid hsl(327 50% 40% / 0.16);
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.bnto-table-rounded th {
+  background: hsla(228, 78%, 60%, 0.16);
+  color: hsl(328, 81%, 21%);
+  text-align: center; padding: 9px 13px;
+}
+.bnto-table-rounded td { padding: 9px 13px; 
+border: 1px solid black;}
+.bnto-table-rounded tbody tr + tr td { border: 1px solid black; }
+.bnto-table-rounded tbody tr{
+  background-color:whitesmoke;
+}
+
+.youbi{
+  font-size: 25px;
+}
