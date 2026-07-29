@@ -116,7 +116,10 @@ h2{
 }
 
 #topneko{
-  margin-top: 15rem;
+  position: fixed
+  right:auto;
+  bottom:100px;
+  margin-right:700px;
 }
 
 .profile{
