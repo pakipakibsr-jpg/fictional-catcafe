@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  /* スマホ用のCSS */
+}
+
 h1{
     color: brown;
     font-size: 40px;
