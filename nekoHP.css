@@ -127,6 +127,7 @@ h2{
 #topneko{
   position: fixed
   right:auto;
+	width:150px;
 }
 
 .profile{
